@@ -9,7 +9,7 @@ Summary:	Data::Dumper::Concise - Less indentation and newlines plus sub deparsin
 #Summary(pl.UTF-8):
 Name:		perl-Data-Dumper-Concise
 Version:	1.001
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -70,5 +70,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%dir %{perl_vendorlib}/Data/Dumper
 %{perl_vendorlib}/Data/Dumper/*.pm
 %{_mandir}/man3/*
