@@ -8,13 +8,13 @@
 Summary:	Data::Dumper::Concise - Less indentation and newlines plus sub deparsing
 #Summary(pl.UTF-8):
 Name:		perl-Data-Dumper-Concise
-Version:	1.001
-Release:	2
+Version:	1.200
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://search.cpan.org/CPAN/authors/id/M/MS/MSTROUT/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	c11365c6a9e9eba8c869e043d4697eab
+# Source0-md5:	02eaee06874c2a9f93886a32a9a69038
 URL:		http://search.cpan.org/dist/Data-Dumper-Concise/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -46,8 +46,7 @@ subrefs first and add them back in a custom way anyway. Note that this
 I've never in my life seen Data::Dumper show up in a profile so "who
 cares?".
 
-# %description -l pl.UTF-8
-# TODO
+# %description -l pl.UTF-8 # TODO
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -72,4 +71,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %dir %{perl_vendorlib}/Data/Dumper
 %{perl_vendorlib}/Data/Dumper/*.pm
+%dir %{perl_vendorlib}/Data/Dumper/Concise
+%{perl_vendorlib}/Data/Dumper/Concise/Sugar.pm
+%{perl_vendorlib}/Devel/Dwarn.pm
+
 %{_mandir}/man3/*
