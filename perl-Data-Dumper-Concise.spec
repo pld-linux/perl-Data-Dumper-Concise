@@ -8,13 +8,13 @@
 Summary:	Data::Dumper::Concise - Less indentation and newlines plus sub deparsing
 #Summary(pl.UTF-8):
 Name:		perl-Data-Dumper-Concise
-Version:	1.200
+Version:	2.021
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/M/MS/MSTROUT/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	02eaee06874c2a9f93886a32a9a69038
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	62eda5696b32d5cd5722842f412b786e
 URL:		http://search.cpan.org/dist/Data-Dumper-Concise/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
