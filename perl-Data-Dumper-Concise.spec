@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	Data
 %define	pnam	Dumper-Concise
 Summary:	Data::Dumper::Concise - Less indentation and newlines plus sub deparsing
